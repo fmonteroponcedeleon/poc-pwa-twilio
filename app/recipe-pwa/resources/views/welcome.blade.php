@@ -7,7 +7,7 @@
         <title>Recipe PWA</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link rel="manifest" href="public/manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
 </head>
 <body>
 <div id="app">
@@ -16,11 +16,11 @@
 <script>
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('public/sw.js');
-        window.fcm = navigator.serviceWorker.register('public/firebase-messaging-sw.js');
+        navigator.serviceWorker.register('/sw.js');
+        // window.fcm = navigator.serviceWorker.register('public/firebase-messaging-sw.js');
     });
 }
 </script>
-<script src='public/js/app.js'></script>
+<script src='js/app.js'></script>
 </body>
 </html>
