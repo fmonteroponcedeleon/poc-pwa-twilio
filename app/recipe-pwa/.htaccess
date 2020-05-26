@@ -2,4 +2,7 @@
     RewriteEngine on
     RewriteCond %{REQUEST_URI} !\.(jpg|png|css|js)$
     RewriteRule ^(.*)$ public/index.php?path=$1 [NC,L,QSA]
+
+    RewriteCond %{REQUEST_URI} \.(jpg|png|css|js)$
+    RewriteRule ^(.*)$ public/$1 [NC,L,QSA]
 </IfModule>
