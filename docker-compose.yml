@@ -4,7 +4,7 @@ services:
   server:
     container_name: pwa_server
     volumes: 
-      - "./app/:/var/www/html"
+      - "./{APP_ROOT}:/var/www/html"
     networks:
       - pwa_network
     ports: 
