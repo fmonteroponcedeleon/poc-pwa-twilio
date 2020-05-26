@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
     RewriteEngine on
-
+    RewriteCond %{REQUEST_URI} !\.(jpg|png|css|js)$
     RewriteRule ^(.*)$ public/index.php?path=$1 [NC,L,QSA]
 </IfModule>
