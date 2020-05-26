@@ -5,6 +5,7 @@ services:
     container_name: pwa_server
     volumes: 
       - "./${APP_ROOT}:/var/www/html"
+      - "./httpd.conf:/etc/apache2/apache2.conf"
     networks:
       - pwa_network
     ports: 
