@@ -17,4 +17,6 @@ RUN echo "" >> ~/.bashrc && \
 
 RUN composer global require laravel/installer
 
+RUN a2enmod rewrite
+
 EXPOSE 80
