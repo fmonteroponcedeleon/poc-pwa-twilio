@@ -97,6 +97,7 @@
                         };
                         firebase.initializeApp(config);
                         const messaging = firebase.messaging();
+                        messaging.useServiceWorker(window.fcm);
 
                         messaging.getToken()
                             .then((token) => {
